@@ -1,0 +1,83 @@
+/* style.css - Simple but Colorful CV Layout */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 30px;
+  background-color: #f5f7fa; /* soft light background */
+  color: #333;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: #002b5c; /* deep blue for name */
+  margin-bottom: 8px;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.contact, .location {
+  margin: 3px 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.section-title {
+  margin-top: 35px;
+  font-size: 1.5rem;
+  color: #004080; /* accent color for section titles */
+  border-bottom: 3px solid #cce0ff;
+  padding-bottom: 5px;
+}
+
+.section-text {
+  margin: 12px 0;
+}
+
+.edu-item, .exp-item, .skill-group {
+  margin-bottom: 20px;
+}
+
+.edu-school, .exp-role, .skill-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0;
+  color: #222;
+}
+
+.edu-degree, .edu-date, .exp-date {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+.exp-list, .skill-list {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin: 6px 0;
+}
+
+.exp-list li, .skill-list li {
+  margin-bottom: 6px;
+}
+
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  .section-title {
+    border-color: black;
+  }
+}
